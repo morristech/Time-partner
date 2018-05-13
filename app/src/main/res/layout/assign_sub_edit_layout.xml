@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingStart="5dp"
+    android:paddingEnd="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!--编辑名字-->
+    <EditText
+        android:id="@+id/sub_name"
+        android:hint="@string/sub_assign_edit_title_edit_hint"
+        style="@style/edit_layout_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <!--编辑内容-->
+    <android.support.design.widget.TextInputLayout
+        style="@style/edit_layout_edit_text_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/sub_content"
+            android:minLines="6"
+            style="@style/edit_layout_edit_text_content"
+            android:hint="@string/sub_assign_edit_content_edit_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+    <!--开始日期-->
+    <LinearLayout
+        android:background="@drawable/s_rect_black10back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_layout_row_height">
+        <TextView
+            style="@style/edit_layout_row_title"
+            android:text="@string/sub_assign_edit_start_date_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <me.shouheng.timepartner.widget.textview.DateTextView
+            android:id="@+id/date_text_view"
+            style="@style/style_for_date_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <View
+        style="@style/edit_layout_divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <!--开始时间-->
+    <LinearLayout
+        android:background="@drawable/s_rect_black10back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_layout_row_height">
+        <TextView
+            style="@style/edit_layout_row_title"
+            android:text="@string/sub_assign_edit_start_time_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <me.shouheng.timepartner.widget.textview.TimeTextView
+            android:id="@+id/time_text_view"
+            style="@style/style_for_time_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <View
+        style="@style/edit_layout_divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+</LinearLayout>

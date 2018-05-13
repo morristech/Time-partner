@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="me.shouheng.timepartner">
+
+    <!-- 其他权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!-- 访问网络 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name=".TpApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+
+        <activity android:name=".activities.base.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarForWelcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.base.LoginActivity"
+            android:theme="@style/NoActionBarForLoginRegister" />
+        <activity android:name=".activities.base.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".activities.assignment.AssignActivity"
+            android:theme="@style/NoActionBarForAssign">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.base.MainActivity" />
+        </activity>
+        <activity android:name=".activities.assignment.AssignEditActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarForAssign" />
+        <activity android:name=".activities.assignment.AssignViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".activities.tpclass.ClassActivity"
+            android:theme="@style/NoActionBarForClass">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.base.MainActivity" />
+        </activity>
+        <activity android:name=".activities.tpclass.ClassEditActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarForClass" />
+        <activity android:name=".activities.tpclass.ClassViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarForClass" />
+        <activity android:name=".activities.tpclass.ClassListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarForClass" />
+
+        <activity android:name=".activities.task.TaskDashboard"
+            android:theme="@style/NoActionBarForTask">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.base.MainActivity" />
+        </activity>
+        <activity android:name=".activities.task.TaskEdit"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarForTask" />
+        <activity android:name=".activities.task.TaskViewer"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarForTask" />
+
+        <activity android:name=".activities.zone.ZoneDashboard"
+            android:theme="@style/ZoneDashboard">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.base.MainActivity" />
+        </activity>
+
+        <activity android:name=".activities.note.NoteEdit"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarForNote" />
+        <activity android:name=".activities.note.NoteCollection"
+            android:theme="@style/NoActionBarForNote">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.base.MainActivity" />
+        </activity>
+        <activity android:name=".activities.note.NoteList"
+            android:theme="@style/NoActionBarForNote" />
+        <activity android:name=".activities.note.NoteViewer"
+            android:theme="@style/NoActionBarForNote" />
+
+        <activity android:name=".activities.base.UserActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activities.base.PreferActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarForPrefence" />
+        <activity android:name=".activities.base.TrashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarForPrefence" />
+
+        <activity android:name=".activities.tpcalendar.CalendarActivity"
+            android:theme="@style/NoActionBarForCalendar" />
+        <activity android:name=".activities.base.WeatherActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WeatherDetailTheme" />
+
+        <activity android:name=".activities.base.ShareActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarForLoginRegister" />
+        <activity android:name=".activities.base.PictureActivity"
+            android:theme="@style/PictureViewTheme" />
+
+        <activity android:name=".activities.base.SearchActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver android:name=".receivers.AlarmReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.simple.nasty.timepartner" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".selector.MultiImageSelectorActivity"
+            android:theme="@style/PictureViewTheme"/>
+
+        <!-- 必须注册在微博授权，分享微博时候用到 -->
+        <!--<activity android:theme="@style/AppTheme.NoActionBar"-->
+            <!--android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"-->
+            <!--android:configChanges="keyboardHidden|orientation"-->
+            <!--android:exported="false"-->
+            <!--android:windowSoftInputMode="adjustResize"/>-->
+        <!--&lt;!&ndash;<meta-data android:name="WEIBO_APPKEY"&ndash;&gt;-->
+            <!--android:value="2305485794" />-->
+        <!--<meta-data android:name="WEIBO_CHANNEL"-->
+            <!--android:value="weibo" />-->
+
+        <!-- 声明service组件,每个app拥有自己单独的定位service -->
+        <service android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+        <meta-data android:name="com.baidu.lbsapi.API_KEY"
+            android:value="UqMLtUyom3ktq82lliv1fXVH5zRkPYUv" />
+    </application>
+
+</manifest>

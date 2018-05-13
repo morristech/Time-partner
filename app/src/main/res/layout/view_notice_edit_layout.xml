@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    android:paddingBottom="10dp"
+    android:background="@android:color/background_light"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!--时间-->
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/com_time"
+            android:gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <me.shouheng.timepartner.widget.textview.TimeTextView
+            android:id="@+id/notice_time"
+            android:gravity="center"
+            android:layout_width="120dp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+    <!--日期-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/com_date"
+            android:gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <me.shouheng.timepartner.widget.textview.DateTextView
+            android:id="@+id/notice_date"
+            android:gravity="center"
+            android:layout_width="120dp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+</LinearLayout>

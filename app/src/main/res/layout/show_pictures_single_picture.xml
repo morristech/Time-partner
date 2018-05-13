@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ooo.oxo.library.widget.PullBackLayout
+        android:id="@+id/pull_back"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <uk.co.senab.photoview.PhotoView
+            android:id="@+id/detail"
+            android:padding="2dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ooo.oxo.library.widget.PullBackLayout>
+    <TextView
+        android:id="@+id/title"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/bg_toolbar_shade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</FrameLayout>

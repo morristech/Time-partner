@@ -1,0 +1,543 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:colorBackground">@color/colorPrimaryBg</item>
+    </style>
+
+
+    <style name="NoActionBarForWelcome" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryLight</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>.
+    <style name="NoActionBarForLoginRegister" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryLight</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="@style/ThemeOverlay.AppCompat.Dark" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="AssignTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/assign_prime</item>
+        <item name="colorPrimaryDark">@color/assign_prime_dark</item>
+        <item name="colorAccent">@color/assign_accent</item>
+    </style>
+    <style name="NoActionBarForAssign" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/assign_prime</item>
+        <item name="colorPrimaryDark">@color/assign_prime_dark</item>
+        <item name="colorAccent">@color/assign_accent</item>
+    </style>
+
+
+    <style name="ClassOverView" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/class_prime</item>
+        <item name="colorPrimaryDark">@color/class_prime_dark</item>
+        <item name="colorAccent">@color/class_accent</item>
+    </style>
+    <style name="NoActionBarForClass" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/class_prime</item>
+        <item name="colorPrimaryDark">@color/class_prime_dark</item>
+        <item name="colorAccent">@color/class_accent</item>
+    </style>
+
+
+    <style name="TaskDashboard" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/task_prime</item>
+        <item name="colorPrimaryDark">@color/task_prime_dark</item>
+        <item name="colorAccent">@color/task_accent</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="NoActionBarForTask" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/task_prime</item>
+        <item name="colorPrimaryDark">@color/task_prime_dark</item>
+        <item name="colorAccent">@color/task_accent</item>
+    </style>
+
+
+    <style name="NoActionBarForNote" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/note_prime</item>
+        <item name="colorPrimaryDark">@color/note_prime_dark</item>
+        <item name="colorAccent">@color/note_accent</item>
+    </style>
+
+
+    <style name="ZoneDashboard" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/zone_prime</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="PictureViewTheme"
+        parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimaryDark">@android:color/black</item>
+        <item name="colorPrimary">@android:color/black</item>
+        <item name="colorAccent">@android:color/black</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+
+    <style name="NoActionBarForPrefence" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/prefer_prime</item>
+        <item name="colorPrimaryDark">@color/prefer_prime_dark</item>
+        <item name="colorAccent">@color/prefer_prime_accent</item>
+    </style>
+
+
+    <style name="NoActionBarForCalendar" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/calendar_prime</item>
+        <item name="colorPrimaryDark">@color/calendar_prime_dark</item>
+        <item name="colorAccent">@color/calendar_accent</item>
+    </style>
+
+
+    <style name="WeatherDetailTheme" parent="AppTheme.NoActionBar">
+        <item name="colorPrimaryDark">@color/weather_primary_dark</item>
+        <item name="colorPrimary">@color/weather_primary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="Setting" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="myPopupOverlay" parent="AppTheme.PopupOverlay">
+        <item name="colorPrimary">@color/task_prime</item>
+        <item name="colorPrimaryDark">@color/task_prime_dark</item>
+        <item name="colorAccent">@color/task_accent</item>
+    </style>
+
+
+    <style name="transfer_text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#A0FFFFFF</item>
+    </style>
+
+
+    <style name="edit_password">
+        <item name="android:inputType">textPassword</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">actionUnspecified</item>
+    </style>
+    <style name="edit_mail">
+        <item name="android:inputType">textEmailAddress</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+
+    <!--TextView：菜单标题-->
+    <style name="menu_title">
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <!--TextView：菜单内容-->
+    <style name="menu_detail">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!--自定义main菜单格式-->
+    <style name="main_nav_menu">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginStart">30dp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+
+    <style name="main_nav_menu_linear">
+        <item name="android:background">@drawable/s_rect_black20trans</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="menu_image">
+        <item name="android:layout_marginStart">15dp</item>
+    </style>
+
+
+    <!--日历风格-->
+    <style name="calendar_divider"><!--日历边框格式-->
+        <item name="android:background">@color/transparent</item>
+    </style>
+    <style name="calender_item1"><!--日历公历数字格式-->
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+    <style name="calendar_item2"><!--日历阴历数字格式-->
+        <item name="android:textSize">9sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+    <style name="calendar_line"><!--日历单项底部的横线的格式-->
+        <item name="android:layout_marginStart">3dp</item>
+        <item name="android:layout_marginEnd">3dp</item>
+    </style>
+    <!--设置头像-->
+    <style name="icon_text">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_marginStart">35dp</item>
+    </style>
+
+
+    <style name="icon_linear">
+        <item name="android:background">@drawable/s_rect_black20trans</item>
+        <item name="android:paddingStart">30dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+
+    <style name="com_text_card_black">
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/s_rect_black20trans</item>
+    </style>
+
+
+    <!--用户资料板块的性别文本-->
+    <style name="user_info_gender">
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+
+    <!--用于日历的各个日期-->
+    <style name="for_calendar_item">
+        <item name="android:padding">2dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <!--用于日历的各个日期-->
+    <style name="for_calendar_line">
+        <item name="android:background">@color/gray</item>
+    </style>
+
+
+    <!--/TYPE_TASK VIEWER 2016-09-06-->
+    <!--用于TaskViewer的提示文字-->
+    <style name="taskv_tip_text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginStart">5dp</item>
+    </style>
+    <!--用于TaskViewer的文字-->
+    <style name="taskv_text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <!--用于TaskViewer的每个显示的项的风格-->
+    <style name="taskv_unit">
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <!--用于TaskView的分隔线的风格-->
+    <style name="taskv_line">
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:background">#ccc</item>
+    </style>
+    <!--用于TaskView的内容和备注的风格-->
+    <style name="taskv_cc">
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+
+    <!--统一浏览视图风格   2016-09-06-->
+    <style name="viewer_bar"> </style>
+    <style name="viewer_title">
+        <item name="android:textSize">23sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginTop">16dp</item></style>
+    <style name="viewer_sub_title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginTop">5dp</item></style>
+
+
+    <!--程序主界面:MainActivity/-->
+    <style name="dash_linear">
+        <item name="android:padding">5dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/s_rect_black20trans</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item></style>
+    <style name="dash_image">
+        <item name="android:background">@drawable/circle_light_gray</item>
+        <item name="android:padding">8dp</item></style>
+    <style name="dash_text">
+        <item name="android:layout_marginTop">5dp</item></style>
+    <style name="weather_text">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@android:color/white</item></style>
+
+    <!--///////////////////////////////天气详情界面的布局
+                                    /////////////////////////////////////////////-->
+    <!--底部的与该日期相关的几天的显示信息容器的格式-->
+    <style name="weather_detail_footer_linear">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:background">@drawable/s_rect_white20trans</item>
+        <item name="android:orientation">vertical</item></style>
+    <style name="weather_detail_footer_text">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/white</item></style>
+    <style name="weather_detail_title_text">
+        <item name="android:padding">0.5dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/white</item></style>
+    <style name="weather_detail_life_text">
+        <item name="android:drawableRight">@drawable/ic_right_arrow</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@android:color/white</item></style>
+    <style name="weather_life_linear">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/s_rect_white20trans</item></style>
+    <style name="city_setting_button_text">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@android:color/white</item></style>
+
+
+    <!--统一设计方案-->
+    <style name="edit_layout_edit_text"><!--编辑界面的EditText的布局方式-->
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:lines">1</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@android:color/background_light</item></style>
+    <style name="edit_layout_divider"><!--编辑界面的EditText与SET按钮之间的分隔线的布局方式-->
+        <item name="android:background">#ccc</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item></style>
+    <style name="edit_layout_set"><!--编辑界面的SET按钮的布局方式-->
+        <item name="android:background">@drawable/s_rect_black10back</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:padding">5dp</item></style>
+    <style name="edit_layout_save_button"><!--编辑界面的 保存 按钮的布局方式-->
+        <item name="android:background">@drawable/s_rect_white40trans</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:text">@string/n_save</item></style>
+    <style name="edit_layout_discard_button"><!--编辑界面的 放弃 按钮的布局方式-->
+        <item name="android:background">@drawable/s_rect_white40trans</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/com_discard</item></style>
+    <style name="edit_layout_title"><!--编辑界面的 标题 的布局方式-->
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@android:color/white</item></style>
+    <style name="edit_layout_delete_button"><!--编辑界面的 删除 按钮的布局方式-->
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:text">@string/com_delete</item>
+        <item name="android:background">@drawable/s_rect_black10back</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item></style>
+    <style name="edit_layout_sub_edit_layout"><!--编辑界面的 子项目 编辑界面布局-->
+        <item name="android:visibility">gone</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/black_50</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:gravity">center</item></style>
+    <style name="edit_layout_date_time_edit_tip"><!--编辑界面的 日期和时间编辑提示 的布局方式-->
+        <item name="android:layout_marginStart">6dp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+    <style name="edit_layout_date_time_edit_frame"><!--编辑界面的 日期和时间编辑框 的布局方式-->
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/frame_black_trans</item>
+        <item name="android:layout_marginStart">16dp</item>
+    </style>
+    <style name="edit_layout_date_time_edit_button"><!--编辑界面的 日期和时间编辑按钮 的布局方式-->
+        <item name="android:background">@drawable/s_rect_black20lightgray</item>
+        <item name="android:tint">@android:color/darker_gray</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:padding">4dp</item></style>
+    <style name="edit_layout_row_image"><!--编辑界面的 行选项的图片 的布局方式-->
+        <item name="android:tint">@android:color/black</item>
+        <item name="android:padding">6dp</item></style>
+    <style name="edit_layout_row_title">
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:gravity">center_vertical</item></style>
+    <style name="edit_layout_row_footer">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:paddingTop">1dp</item>
+        <item name="android:paddingBottom">1dp</item>
+        <item name="android:gravity">center_vertical</item></style>
+    <style name="edit_layout_edit_text_container">
+        <item name="android:background">@android:color/background_light</item></style>
+    <style name="edit_layout_edit_text_content">
+        <item name="android:background">@android:color/background_light</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:gravity">start</item></style>
+    <style name="edit_layout_sub_edit_layout_button_bar"><!--子项编辑：底部按钮-->
+        <item name="android:gravity">end</item>
+        <item name="android:background">@color/background</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:layout_marginTop">10dp</item></style>
+    <style name="edit_layout_sub_edit_layout_button"><!--子项编辑：底部按钮-->
+        <item name="android:textColor">#26A69A</item>
+        <item name="android:background">@drawable/s_rect_black20trans</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingStart">18dp</item>
+        <item name="android:paddingEnd">18dp</item></style>
+    <style name="edit_layout_sub_edit_layout_title"><!--子项编辑：顶部标题-->
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">17.5sp</item></style>
+    <style name="edit_layout_sub_edit_divier_line"><!--子项编辑：分割线-->
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:background">#ccc</item></style>
+
+
+    <!--Fab菜单-->
+    <style name="fab_menu_mini">
+        <item name="android:visibility">gone</item>
+        <item name="android:background">@drawable/fab_menu_mini_selector</item>
+        <item name="android:padding">14dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginEnd">24dp</item>
+        <item name="android:layout_alignParentEnd">true</item></style>
+    <style name="fab_menu_tip">
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@drawable/shader_background</item></style>
+    <style name="fab_menu_mini_land">
+        <item name="android:visibility">gone</item>
+        <item name="android:background">@drawable/fab_menu_mini_selector</item>
+        <item name="android:padding">14dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginEnd">10dp</item></style>
+    <style name="fab_menu_tip_land">
+        <item name="android:visibility">gone</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@drawable/shader_background</item></style>
+
+
+    <!--课程-->
+    <style name="class_viewer_item_text_style">
+        <item name="android:tint">@android:color/black</item></style>
+    <style name="class_viewer_item_image_style">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginStart">16dp</item></style>
+
+
+    <!--随后记-->
+    <style name="note_media_icon">
+        <item name="android:background">@drawable/s_rect_black10back</item>
+        <item name="android:padding">11dp</item></style>
+    <style name="note_media_divider">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:background">#ccc</item></style>
+    <style name="note_pictures_view_debug">
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+
+    <!--用于日期选择的TextView-->
+    <style name="style_for_date_text_view">
+        <item name="android:padding">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/s_rect_black10back</item>
+    </style>
+    <style name="style_for_time_text_view">
+        <item name="android:padding">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/s_rect_black10back</item>
+    </style>
+
+
+    <!--各个布局文件的各个项目之间的分割线-->
+    <style name="edit_layout_divider_line">
+        <item name="android:background">@color/light_gray</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
+</resources>

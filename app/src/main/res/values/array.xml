@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="footer_options">
+        <item>编辑</item>
+        <item>删除</item>
+    </string-array>
+
+    <string-array name="week_strings">
+        <item>星期日</item>
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+    </string-array>
+
+    <string-array name="week_strings_monday">
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+        <item>星期日</item>
+    </string-array>
+
+    <string-array name="view_unit_header_options">
+        <item>编辑</item>
+        <item>删除</item>
+    </string-array>
+
+    <string-array name="months_array">
+        <item>1月</item>
+        <item>2月</item>
+        <item>3月</item>
+        <item>4月</item>
+        <item>5月</item>
+        <item>6月</item>
+        <item>7月</item>
+        <item>8月</item>
+        <item>9月</item>
+        <item>10月</item>
+        <item>11月</item>
+        <item>12月</item>
+    </string-array>
+
+    <string-array name="bg_select_dialog_items">
+        <item>使用颜色</item>
+        <item>使用图片</item>
+    </string-array>
+
+    <string-array name="notice_mode_items">
+        <item>仅通知</item>
+        <item>振动+通知</item>
+        <item>跟随系统</item>
+    </string-array>
+
+    <string-array name="daily_notice_time">
+        <item>5:00 am</item>
+        <item>6:00 am</item>
+        <item>7:00 am</item>
+        <item>8:00 am</item>
+        <item>9:00 am</item>
+    </string-array>
+
+    <string-array name="item_notice_time">
+        <item>准时提醒</item>
+        <item>提前5分钟</item>
+        <item>提前10分钟</item>
+        <item>提前15分钟</item>
+        <item>提前30分钟</item>
+        <item>提前1小时</item>
+        <item>提前2小时</item>
+        <item>提前1天</item>
+    </string-array>
+
+    <string-array name="board_height_items">
+        <item>最高</item>
+        <item>高</item>
+        <item>适中</item>
+        <item>小</item>
+        <item>最小</item>
+    </string-array>
+
+</resources>

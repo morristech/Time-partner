@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/this_month" android:title="@string/cld_menu_1"/>
+    <item android:id="@+id/last_month" android:title="@string/cld_menu_2"/>
+    <item android:id="@+id/next_month" android:title="@string/cld_menu_3"/>
+    <item android:id="@+id/show_as_week" android:title="@string/cld_menu_4"/>
+    <item android:id="@+id/share" android:title="@string/com_share"/>
+</menu>

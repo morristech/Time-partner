@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.note.NoteEdit">
+    <!--删除按钮-->
+    <TextView
+        android:id="@+id/delete"
+        android:onClick="onClick"
+        style="@style/edit_layout_delete_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_layout_delete_button_height" />
+    <!--文字内容 和 多媒体信息-->
+    <LinearLayout
+        android:layout_above="@id/delete"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--工具栏-->
+        <RelativeLayout
+            android:id="@+id/action_bar"
+            android:background="@color/note_prime"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+            <TextView
+                android:id="@+id/discard"
+                style="@style/edit_layout_discard_button"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/save"
+                style="@style/edit_layout_save_button"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="match_parent" />
+            <TextView
+                style="@style/edit_layout_title"
+                android:text="@string/n_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <!--内容-->
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--编辑-->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!--编辑标题-->
+                    <EditText
+                        android:id="@+id/edit_title"
+                        android:hint="@string/com_title"
+                        android:background="@android:color/background_light"
+                        android:padding="10dp"
+                        android:textSize="20sp"
+                        android:maxLines="1"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <!--编辑内容-->
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/edit_layout_edit_text_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/edit_content"
+                            android:hint="@string/n_content_hint"
+                            android:minLines="10"
+                            style="@style/edit_layout_edit_text_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </android.support.design.widget.TextInputLayout>
+                    <!--多媒体组件-->
+                    <LinearLayout
+                        android:background="@android:color/background_light"
+                        android:orientation="horizontal"
+                        android:gravity="end"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+                        <TextView
+                            android:id="@+id/add_to_cln"
+                            android:text="@string/n_collection"
+                            android:ellipsize="end"
+                            android:padding="5dp"
+                            android:lines="2"
+                            android:onClick="onClick"
+                            android:background="@drawable/s_rect_black10back"
+                            android:gravity="center_vertical"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent" />
+                        <ImageView
+                            android:id="@+id/add_picture"
+                            android:contentDescription="@string/n_picture"
+                            android:tint="@color/color_16"
+                            android:onClick="onClick"
+                            android:src="@drawable/ic_camera"
+                            style="@style/note_media_icon"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent" />
+                        <ImageView
+                            android:id="@+id/add_audio"
+                            android:src="@drawable/ic_audio"
+                            style="@style/note_media_icon"
+                            android:onClick="onClick"
+                            android:tint="@color/color_1"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent" />
+                        <ImageView
+                            android:id="@+id/add_video"
+                            android:tint="@color/color_10"
+                            android:src="@drawable/ic_video"
+                            android:onClick="onClick"
+                            style="@style/note_media_icon"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent" />
+                        <ImageView
+                            android:id="@+id/add_location"
+                            android:tint="@color/color_6"
+                            android:src="@drawable/ic_location"
+                            android:onClick="onClick"
+                            style="@style/note_media_icon"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent" />
+                        <ImageView
+                            android:id="@+id/add_alarm"
+                            android:tint="@color/color_25"
+                            android:src="@drawable/ic_alarm"
+                            android:onClick="onClick"
+                            style="@style/note_media_icon"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--多媒体信息列表-->
+                <LinearLayout
+                    android:id="@+id/list_media"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+    <!--录音组件-->
+    <me.shouheng.timepartner.widget.custom.RecordView
+        android:id="@+id/record_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

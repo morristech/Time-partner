@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/add_assign_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.assignment.AssignEditActivity">
+    <!--删除-->
+    <TextView
+        android:id="@+id/delete"
+        style="@style/edit_layout_delete_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_layout_delete_button_height" />
+    <!--内容-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_above="@id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--工具栏-->
+        <me.shouheng.timepartner.widget.custom.CustomActionBar
+            android:id="@+id/action_bar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            app:action_bar_background="@color/assign_prime"
+            app:action_bar_title="@string/assign_edit_title"/>
+        <!--内容滚动-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--边界名称以及颜色设置-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_layout_edit_bar_height">
+                    <me.shouheng.timepartner.widget.custom.ColorPickerView
+                        android:id="@+id/set_color"
+                        style="@style/edit_layout_set"
+                        android:src="@color/color_9"
+                        app:dialog_title="@string/asn_color_title"
+                        android:layout_width="@dimen/edit_layout_set_width"
+                        android:layout_height="match_parent" />
+                    <EditText
+                        android:id="@+id/assign_name"
+                        style="@style/edit_layout_edit_text"
+                        android:hint="@string/assign_edit_title_edit_hint"
+                        android:layout_toStartOf="@id/set_color"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+                <!--编辑内容-->
+                <android.support.design.widget.TextInputLayout
+                    style="@style/edit_layout_edit_text_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/assign_content"
+                        android:hint="@string/assign_edit_content_edit_hint"
+                        android:minLines="10"
+                        style="@style/edit_layout_edit_text_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </android.support.design.widget.TextInputLayout>
+                <!--开始时间-->
+                <LinearLayout
+                    android:background="@android:color/background_light"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_layout_row_height">
+                    <TextView
+                        style="@style/edit_layout_row_title"
+                        android:text="@string/assign_edit_time_tip"
+                        android:layout_marginStart="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                    <me.shouheng.timepartner.widget.textview.TimeTextView
+                        android:id="@+id/time_text_view"
+                        style="@style/style_for_time_text_view"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <!--开始日期-->
+                <LinearLayout
+                    android:background="@android:color/background_light"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_layout_row_height">
+                    <TextView
+                        style="@style/edit_layout_row_title"
+                        android:text="@string/assign_edit_date_tip"
+                        android:layout_marginStart="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                    <me.shouheng.timepartner.widget.textview.DateTextView
+                        android:id="@+id/date_text_view"
+                        style="@style/style_for_date_text_view"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <View
+                    style="@style/edit_layout_divider_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"/>
+                <!--备注-->
+                <LinearLayout
+                    android:background="@android:color/background_light"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_layout_row_height">
+                    <LinearLayout
+                        android:id="@+id/add_comments"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/s_rect_black10back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:src="@drawable/ic_comments"
+                            android:tint="@color/color_17"
+                            android:padding="10dp"
+                            style="@style/edit_layout_row_image"
+                            android:layout_width="@dimen/edit_layout_row_iamge_width"
+                            android:layout_height="match_parent" />
+                        <TextView
+                            style="@style/edit_layout_row_title"
+                            android:text="@string/assign_edit_comment_tip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/comments_state"
+                        style="@style/edit_layout_row_footer"
+                        android:background="@drawable/s_rect_black10back"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <View
+                    style="@style/edit_layout_divider_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"/>
+                <!--子项目-->
+                <LinearLayout
+                    android:background="@android:color/background_light"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_layout_row_height">
+                    <LinearLayout
+                        android:id="@+id/add_sub_assigns"
+                        android:background="@drawable/s_rect_black10back"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:src="@drawable/ic_add_rectangle"
+                            android:tint="@color/color_5"
+                            android:padding="10dp"
+                            style="@style/edit_layout_row_image"
+                            android:layout_width="@dimen/edit_layout_row_iamge_width"
+                            android:layout_height="match_parent" />
+                        <TextView
+                            style="@style/edit_layout_row_title"
+                            android:text="@string/assign_edit_add_sub_assign_tip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/sub_num_state"
+                        style="@style/edit_layout_row_footer"
+                        android:background="@drawable/s_rect_black10back"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <!--子日程列表-->
+                <LinearLayout
+                    android:id="@+id/list_sub"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

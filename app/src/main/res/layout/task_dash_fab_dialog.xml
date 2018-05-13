@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    android:background="@color/background"
+    android:layout_width="220dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/add_task"
+        android:background="@drawable/s_rect_black10back"
+        android:layout_width="220dp"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_marginStart="30dp"
+            android:src="@drawable/ic_task"
+            android:tint="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="@string/task_add_task"
+            android:textSize="16sp"
+            android:paddingStart="20dp"
+            android:textColor="@android:color/black"
+            android:gravity="start|center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/add_exam"
+        android:background="@drawable/s_rect_black10back"
+        android:layout_width="220dp"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_marginStart="30dp"
+            android:src="@drawable/ic_exam"
+            android:tint="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="@string/task_add_exam"
+            android:textSize="16sp"
+            android:paddingStart="20dp"
+            android:textColor="@android:color/black"
+            android:gravity="start|center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:background="@color/task_accent"
+        android:gravity="center"
+        android:text="@string/task_add_title"
+        android:layout_width="220dp"
+        android:layout_height="50dp" />
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <declare-styleable name="MaterialTabHost">
+
+        <!-- Custom attributes -->
+        <attr name="hasIcons" format="boolean" />
+        <attr name="materialTabsPrimaryColor" format="color" />
+        <attr name="accentColor" format="color" />
+        <attr name="iconColor" format="color" />
+        <attr name="textColor" format="color"  />
+    </declare-styleable>
+
+    <!--UIButton-->
+    <declare-styleable name="UIButton">
+        <attr name="color_pressed" format="color"/>
+        <attr name="color_unpressed" format="color"/>
+        <attr name="ripple_color" format="color"/>
+        <attr name="ripple_alpha" format="integer"/>
+        <attr name="ripple_duration" format="integer"/>
+        <attr name="alpha_pressed" format="integer"/>
+        <attr name="radius" format="dimension"/>
+        <attr name="shape_type" format="enum">
+            <enum name="round" value="0"/>
+            <enum name="rectangle" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CustomActionBar">
+        <attr name="action_bar_title" format="string"/>
+        <attr name="action_bar_background" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="ColorPickerView">
+        <attr name="dialog_title" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="BasePreferView">
+        <attr name="preference_title" format="string"/>
+        <attr name="preference_detail" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="TPRippleButton">
+        <attr name="tprTitle" format="string"/>
+        <attr name="tprTitleSize" format="dimension"/>
+        <attr name="tprRippleColor" format="color"/>
+        <attr name="tprBackColor" format="color"/>
+        <attr name="tprTitleColor" format="color"/>
+        <attr name="tprAnimMillis" format="integer"/>
+        <attr name="tprDelayMillis" format="integer"/>
+    </declare-styleable>
+</resources>

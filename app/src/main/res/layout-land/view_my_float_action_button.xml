@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <me.shouheng.timepartner.widget.reveal.RevealColorView
+            android:id="@+id/reveal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/menu1"
+        android:src="@drawable/ic_write"
+        android:padding="20dp"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="6dp"
+        android:background="@drawable/fab_menu_normal_selector"
+        android:layout_width="67dp"
+        android:layout_height="67dp" />
+
+    <ImageView
+        android:id="@+id/menu2"
+        android:src="@drawable/ic_exam"
+        android:layout_toStartOf="@id/menu1"
+        android:layout_alignBottom="@id/menu1"
+        style="@style/fab_menu_mini_land"
+        android:layout_width="52dp"
+        android:layout_height="52dp" />
+
+    <ImageView
+        android:id="@+id/menu3"
+        android:src="@drawable/ic_task"
+        android:layout_toStartOf="@id/menu2"
+        android:layout_alignBottom="@id/menu1"
+        style="@style/fab_menu_mini_land"
+        android:layout_width="52dp"
+        android:layout_height="52dp" />
+
+    <ImageView
+        android:id="@+id/menu4"
+        android:src="@drawable/ic_assign"
+        android:layout_toStartOf="@id/menu3"
+        android:layout_alignBottom="@id/menu1"
+        style="@style/fab_menu_mini_land"
+        android:layout_width="52dp"
+        android:layout_height="52dp" />
+
+    <ImageView
+        android:id="@+id/menu5"
+        android:src="@drawable/ic_book"
+        android:layout_toStartOf="@id/menu4"
+        android:layout_alignBaseline="@id/menu1"
+        android:layout_alignBottom="@id/menu1"
+        style="@style/fab_menu_mini_land"
+        android:layout_width="52dp"
+        android:layout_height="52dp" />
+
+    <TextView
+        android:id="@+id/tip1"
+        android:text="@string/menu6"
+        android:visibility="gone"
+        android:layout_above="@id/menu1"
+        android:layout_alignBaseline="@id/menu1"
+        android:layout_alignStart="@id/menu1"
+        android:background="@drawable/shader_background"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tip2"
+        android:text="@string/menu5"
+        android:layout_alignStart="@id/menu2"
+        android:layout_above="@id/menu2"
+        style="@style/fab_menu_tip_land"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tip3"
+        android:text="@string/menu4"
+        android:layout_alignStart="@id/menu3"
+        android:layout_above="@id/menu3"
+        style="@style/fab_menu_tip_land"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tip4"
+        android:text="@string/menu3"
+        android:layout_alignStart="@id/menu4"
+        android:layout_above="@id/menu4"
+        style="@style/fab_menu_tip_land"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tip5"
+        android:text="@string/menu2"
+        android:layout_alignStart="@id/menu5"
+        android:layout_above="@id/menu5"
+        style="@style/fab_menu_tip_land"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/menu"
+        android:src="@drawable/ic_add_plus"
+        android:padding="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/fab_menu_normal_selector"
+        android:layout_width="67dp"
+        android:layout_height="67dp" />
+
+</merge>

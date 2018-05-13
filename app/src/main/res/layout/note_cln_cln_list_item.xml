@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:id="@+id/bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    app:cardBackgroundColor="@color/note_prime"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:layout_margin="@dimen/card_margin"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <me.shouheng.timepartner.widget.reveal.RevealColorView
+                android:id="@+id/reveal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:text="Note Collection Title"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/row1"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/total"
+                android:text="245"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:padding="2dp"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/add_date"
+                android:text="2016 08月08"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:padding="2dp"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/add_time"
+                android:text="11:11AM"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:padding="2dp"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/row1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/note_total"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:padding="2dp"
+                android:textColor="#A0FFFFFF"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="@string/note_cln_date_tip"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:padding="2dp"
+                android:textColor="#A0FFFFFF"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="@string/note_cln_time_tip"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:padding="2dp"
+                android:textColor="#A0FFFFFF"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:background="@drawable/ic_circle_quater"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <ImageView
+            android:id="@+id/footer"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="2.5dp"
+            android:padding="5.5dp"
+            android:background="@drawable/s_circle_white20trans"
+            android:src="@drawable/ic_arrow_down_white_24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_width="36dp"
+            android:layout_height="36dp" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

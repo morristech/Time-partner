@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical|right"
+        android:background="#37474F">
+        <me.shouheng.timepartner.widget.ripplebutton.UIRippleButton
+            android:id="@+id/commit"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:background="@color/blue"
+            android:minHeight="1dp"
+            android:minWidth="1dp"
+            android:layout_marginRight="16dp"
+            app:ripple_color = "@color/dark_blue"
+            app:color_unpressed="@color/blue"
+            app:ripple_duration="400"
+            android:padding="5dp"
+            app:shape_type="rectangle"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/image_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

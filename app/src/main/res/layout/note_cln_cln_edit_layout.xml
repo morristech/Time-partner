@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingTop="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.design.widget.TextInputLayout
+        style="@style/edit_layout_edit_text_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edit_content"
+            android:padding="8dp"
+            android:hint="@string/cln_edit_name_tip"
+            android:textSize="16sp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/background_light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginEnd="10dp"
+            android:gravity="center_vertical"
+            android:id="@+id/picker_color_tip"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:text="@string/cln_edit_color_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <me.shouheng.timepartner.widget.custom.ColorPickerView
+            android:id="@+id/set_color"
+            android:background="@drawable/s_rect_black20trans"
+            android:tag="#6200EA"
+            android:src="@color/color_9"
+            android:padding="4dp"
+            app:dialog_title="@string/cln_color_selector"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+</LinearLayout>

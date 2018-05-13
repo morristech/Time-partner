@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/recover" android:title="@string/com_delete_recover"/>
+    <item android:id="@+id/finally_delete" android:title="@string/com_delete_finally"/>
+</menu>

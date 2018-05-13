@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".activities.base.PictureActivity"
+    android:orientation="vertical">
+    <ViewStub
+        android:id="@+id/show_multiple"
+        android:layout="@layout/show_pictures_multiple_pictures"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ViewStub
+        android:id="@+id/show_single"
+        android:layout="@layout/show_pictures_single_picture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ViewStub
+        android:id="@+id/show_single_edit"
+        android:layout="@layout/show_pictures_for_single_picture_edit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

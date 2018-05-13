@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/weather"
+    tools:context=".activities.base.WeatherActivity">
+    <!--底部的关联日期显示组件-->
+    <LinearLayout
+        android:id="@+id/associate_days"
+        android:baselineAligned="false"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@color/weather_color_1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/footer1"
+                style="@style/weather_detail_footer_linear"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/day1_date"
+                    style="@style/weather_detail_footer_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/day1_weather"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:id="@+id/day1_temp"
+                    style="@style/weather_detail_footer_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:background="@color/weather_color_2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/footer2"
+                style="@style/weather_detail_footer_linear"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/day2_date"
+                    style="@style/weather_detail_footer_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/day2_weather"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:id="@+id/day2_temp"
+                    style="@style/weather_detail_footer_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:background="@color/weather_color_3"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/footer3"
+                style="@style/weather_detail_footer_linear"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/day3_date"
+                    style="@style/weather_detail_footer_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/day3_weather"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:id="@+id/day3_temp"
+                    style="@style/weather_detail_footer_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:background="@color/weather_color_4"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/footer4"
+                style="@style/weather_detail_footer_linear"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/day4_date"
+                    style="@style/weather_detail_footer_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/day4_weather"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:id="@+id/day4_temp"
+                    style="@style/weather_detail_footer_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!--工具栏-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextColor="@android:color/white"
+        app:subtitleTextColor="@android:color/white"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="#00FFFFFF"
+        app:title=" "/>
+    <!--滚动组件-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_marginTop="30dp"
+        android:layout_above="@id/associate_days"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--天气显示组件-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--天气状况的图标-->
+                <LinearLayout
+                    android:gravity="end"
+                    android:paddingEnd="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/weather_pic"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"/>
+                </LinearLayout>
+                <!--天气的文字信息、地点信息、时间和日期信息-->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/location"
+                        style="@style/weather_detail_title_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/date"
+                        style="@style/weather_detail_title_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/weather"
+                        style="@style/weather_detail_title_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--温度显示组件-->
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--显示温度的值-->
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/temperature"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="140sp"
+                    android:textColor="@android:color/white"
+                    android:gravity="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <!--显示温度的单位-->
+                <TextView
+                    android:id="@+id/temp_unit"
+                    android:layout_toRightOf="@id/temperature"
+                    android:layout_alignBaseline="@id/temperature"
+                    android:gravity="start|bottom"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <!--PM2.5 and the wind-->
+            <LinearLayout
+                android:layout_marginBottom="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/show_pm25"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/show_wind"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <!--显示生活信息的栏目-->
+            <LinearLayout
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--the first row to show the life state-->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!--wearing state-->
+                    <LinearLayout
+                        android:id="@+id/life1"
+                        style="@style/weather_life_linear"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/ic_action_tshirt"
+                            android:padding="8dp"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp" />
+                        <TextView
+                            android:text="@string/life_state1"
+                            style="@style/weather_detail_life_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <!--visiting state-->
+                    <LinearLayout
+                        android:id="@+id/life2"
+                        style="@style/weather_life_linear"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/ic_action_plane"
+                            android:padding="8dp"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp" />
+                        <TextView
+                            android:text="@string/life_state2"
+                            style="@style/weather_detail_life_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--the second row to show the life state-->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!--cold state-->
+                    <LinearLayout
+                        android:id="@+id/life3"
+                        style="@style/weather_life_linear"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/ic_action_pill"
+                            android:padding="8dp"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp" />
+                        <TextView
+                            android:text="@string/life_state3"
+                            style="@style/weather_detail_life_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <!--sport state-->
+                    <LinearLayout
+                        android:id="@+id/life4"
+                        style="@style/weather_life_linear"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/ic_action_ball"
+                            android:padding="8dp"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp" />
+                        <TextView
+                            android:text="@string/life_state4"
+                            style="@style/weather_detail_life_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--show the life state detail in the text view-->
+                <TextView
+                    android:id="@+id/show_life_state"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

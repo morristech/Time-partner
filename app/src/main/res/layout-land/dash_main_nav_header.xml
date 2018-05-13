@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+    <!--用户信息栏-->
+    <LinearLayout
+        android:paddingTop="30dp"
+        android:paddingBottom="10dp"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        android:background="@color/nav_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <!--头像-->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:scaleType="centerCrop"
+                android:id="@+id/userIcon"
+                android:background="@drawable/s_circle_white20trans"
+                android:padding="2dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/tp_user_icon" />
+        </FrameLayout>
+        <!--用户名-->
+        <TextView
+            android:id="@+id/user_name"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        <!--用户账号-->
+        <TextView
+            android:id="@+id/user_account"
+            android:textColor="#E0FFFFFF"
+            android:textSize="15sp"
+            android:layout_marginStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--万花筒：暂时不考虑实现该功能-->
+        <!--
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/nav_zone"
+            style="@style/main_nav_menu_linear"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                style="@style/menu_image"
+                android:src="@drawable/com_png_zone"
+                android:layout_width="24dp"
+                android:layout_height="match_parent" />
+            <TextView
+                style="@style/main_nav_menu"
+                android:text="@string/zone_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>-->
+        <!--随手记-->
+        <!--
+        <LinearLayout
+            android:id="@+id/nav_note"
+            style="@style/main_nav_menu_linear"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                style="@style/menu_image"
+                android:src="@drawable/com_png_write"
+                android:layout_width="24dp"
+                android:layout_height="match_parent" />
+            <TextView
+                style="@style/main_nav_menu"
+                android:text="@string/main_menu_note"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        -->
+        <!--时光线：暂时不考虑实现该功能-->
+        <!--
+        <LinearLayout
+            android:id="@+id/nav_time_line"
+            style="@style/main_nav_menu_linear"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                style="@style/menu_image"
+                android:src="@drawable/main_nav_time_line"
+                android:layout_width="24dp"
+                android:layout_height="match_parent" />
+            <TextView
+                style="@style/main_nav_menu"
+                android:text="@string/main_menu_time_line"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        -->
+        <!--为今天打分-->
+        <LinearLayout
+            android:id="@+id/nav_rate_today"
+            style="@style/main_nav_menu_linear"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                style="@style/menu_image"
+                android:src="@drawable/ic_rating"
+                android:layout_width="24dp"
+                android:layout_height="match_parent" />
+            <TextView
+                style="@style/main_nav_menu"
+                android:text="@string/mmenu_rate_today"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <!--同步数据-->
+        <LinearLayout
+            android:id="@+id/nav_sync"
+            style="@style/main_nav_menu_linear"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                style="@style/menu_image"
+                android:src="@drawable/ic_sync"
+                android:layout_width="24dp"
+                android:layout_height="match_parent" />
+            <TextView
+                style="@style/main_nav_menu"
+                android:text="@string/mmenu_sync"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <!--设置-->
+        <LinearLayout
+            android:id="@+id/nav_setting"
+            style="@style/main_nav_menu_linear"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                style="@style/menu_image"
+                android:src="@drawable/ic_settings"
+                android:layout_width="24dp"
+                android:layout_height="match_parent" />
+            <TextView
+                style="@style/main_nav_menu"
+                android:text="@string/mmenu_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <!--关于-->
+        <LinearLayout
+            android:id="@+id/nav_about"
+            style="@style/main_nav_menu_linear"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                style="@style/menu_image"
+                android:src="@drawable/ic_about"
+                android:layout_width="24dp"
+                android:layout_height="match_parent" />
+            <TextView
+                style="@style/main_nav_menu"
+                android:text="@string/mmenu_about"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <!--反馈-->
+        <LinearLayout
+            android:id="@+id/nav_feedback"
+            style="@style/main_nav_menu_linear"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                style="@style/menu_image"
+                android:src="@drawable/ic_feedback"
+                android:layout_width="24dp"
+                android:layout_height="match_parent" />
+            <TextView
+                style="@style/main_nav_menu"
+                android:text="@string/mmenu_feedback"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <TextView
+            android:background="@color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+    </LinearLayout>
+</LinearLayout>

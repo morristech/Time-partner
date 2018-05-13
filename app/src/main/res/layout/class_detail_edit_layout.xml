@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@android:color/background_light"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--开始时间-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/class_start_time"
+            style="@style/edit_layout_date_time_edit_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <me.shouheng.timepartner.widget.textview.TimeTextView
+            android:id="@+id/start_time"
+            style="@style/style_for_time_text_view"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <!--结束时间-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/class_end_time"
+            style="@style/edit_layout_date_time_edit_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <me.shouheng.timepartner.widget.textview.TimeTextView
+            android:id="@+id/end_time"
+            style="@style/style_for_time_text_view"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <!--日期错误提示-->
+    <TextView
+        android:id="@+id/time_err_tip"
+        android:visibility="gone"
+        android:textColor="@color/color_16"
+        android:layout_marginStart="10dp"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <View
+        style="@style/edit_layout_divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <!--上课地点-->
+    <LinearLayout
+        android:id="@+id/location"
+        android:background="@drawable/s_rect_black10back"
+        android:layout_marginStart="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/edit_layout_row_height">
+        <ImageView
+            android:src="@drawable/ic_location"
+            style="@style/edit_layout_row_image"
+            android:padding="10dp"
+            android:tint="@color/color_5"
+            android:layout_width="@dimen/edit_layout_row_iamge_width"
+            android:layout_height="match_parent"  />
+        <TextView
+            android:text="@string/class_location"
+            style="@style/edit_layout_row_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/location_state"
+            style="@style/edit_layout_row_footer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <View
+        style="@style/edit_layout_divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <!--任课教师-->
+    <LinearLayout
+        android:id="@+id/teacher"
+        android:background="@drawable/s_rect_black10back"
+        android:layout_marginStart="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/edit_layout_row_height">
+        <ImageView
+            android:src="@drawable/ic_teacher"
+            style="@style/edit_layout_row_image"
+            android:padding="10dp"
+            android:tint="@color/color_18"
+            android:layout_width="@dimen/edit_layout_row_iamge_width"
+            android:layout_height="match_parent"  />
+        <TextView
+            android:text="@string/class_teacher"
+            style="@style/edit_layout_row_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/teacher_state"
+            style="@style/edit_layout_row_footer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <View
+        style="@style/edit_layout_divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <!--上课周次-->
+    <LinearLayout
+        android:id="@+id/weeks"
+        android:background="@drawable/s_rect_black10back"
+        android:layout_marginStart="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/edit_layout_row_height">
+        <ImageView
+            android:src="@drawable/ic_calendar2"
+            style="@style/edit_layout_row_image"
+            android:tint="@color/color_16"
+            android:padding="10dp"
+            android:layout_width="@dimen/edit_layout_row_iamge_width"
+            android:layout_height="match_parent"  />
+        <TextView
+            android:text="@string/class_week"
+            style="@style/edit_layout_row_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/weeks_state"
+            style="@style/edit_layout_row_footer"
+            android:tag="0000000"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <View
+        style="@style/edit_layout_divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <!--确定和取消按钮-->
+    <LinearLayout
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/btn_cancel"
+            android:text="@string/com_cancel"
+            android:textColor="@color/color_24"
+            android:background="@drawable/s_rect_black10back"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/btn_confirm"
+            android:text="@string/com_confirm"
+            android:textColor="@color/color_24"
+            android:background="@drawable/s_rect_black10back"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

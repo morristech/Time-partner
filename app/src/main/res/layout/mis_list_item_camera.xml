@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.shouheng.timepartner.selector.SquareFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#343535"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:tint="@color/blue"
+        android:src="@drawable/ic_camera"
+        android:layout_gravity="center"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+</me.shouheng.timepartner.selector.SquareFrameLayout>

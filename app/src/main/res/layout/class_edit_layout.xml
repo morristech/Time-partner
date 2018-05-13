@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="me.shouheng.timepartner.activities.tpclass.ClassEditActivity">
+    <!--删除-->
+    <TextView
+        android:id="@+id/delete"
+        style="@style/edit_layout_delete_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_layout_delete_button_height" />
+    <!--内容-->
+    <LinearLayout
+        android:layout_above="@id/delete"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--工具栏-->
+        <me.shouheng.timepartner.widget.custom.CustomActionBar
+            android:id="@+id/action_bar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            app:action_bar_title="@string/class_edit_title"
+            app:action_bar_background="@color/class_prime"/>
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+            <LinearLayout
+                android:background="@android:color/background_light"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--课程名和颜色-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_layout_edit_bar_height">
+                    <me.shouheng.timepartner.widget.custom.ColorPickerView
+                        android:id="@+id/set_color"
+                        style="@style/edit_layout_set"
+                        android:src="@color/color_5"
+                        android:layout_width="@dimen/edit_layout_set_width"
+                        app:dialog_title="@string/class_color_selector"
+                        android:layout_height="match_parent" />
+                    <EditText
+                        android:id="@+id/class_name"
+                        style="@style/edit_layout_edit_text"
+                        android:hint="@string/class_edit_name"
+                        android:layout_toStartOf="@id/set_color"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </RelativeLayout>
+                <!--开始日期-->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="@string/class_start_date"
+                        style="@style/edit_layout_date_time_edit_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                    <me.shouheng.timepartner.widget.textview.DateTextView
+                        android:id="@+id/start_date_text_view"
+                        style="@style/style_for_date_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <!--结束日期-->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="@string/class_end_date"
+                        style="@style/edit_layout_date_time_edit_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                    <me.shouheng.timepartner.widget.textview.DateTextView
+                        android:id="@+id/end_date_text_view"
+                        style="@style/style_for_date_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <!--课程日期设置错误提示-->
+                <TextView
+                    android:id="@+id/date_err_tip"
+                    android:padding="5dp"
+                    android:visibility="gone"
+                    android:textColor="@color/color_16"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <!--添加课程信息-->
+                <LinearLayout
+                    android:id="@+id/add_item"
+                    android:background="@drawable/s_rect_black10back"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/edit_layout_row_height">
+                    <ImageView
+                        android:src="@drawable/ic_add_rectangle"
+                        style="@style/edit_layout_row_image"
+                        android:tint="@color/color_5"
+                        android:padding="10dp"
+                        android:layout_width="@dimen/edit_layout_row_iamge_width"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:text="@string/class_add_item"
+                        style="@style/edit_layout_row_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <!--课程详细信息列表-->
+                <LinearLayout
+                    android:id="@+id/list_item"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+</RelativeLayout>

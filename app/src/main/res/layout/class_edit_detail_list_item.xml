@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="3dp"
+    app:cardCornerRadius="2.5dp"
+    app:cardElevation="3dp"
+    app:cardBackgroundColor="@android:color/background_light">
+    <LinearLayout
+        android:layout_margin="3dp"
+        android:paddingBottom="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--周次-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <!--上课周次-->
+            <TextView
+                android:id="@+id/detail_week_tip"
+                android:text="@string/class_weekx"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/detail_week"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_toEndOf="@id/detail_week_tip"
+                android:layout_marginStart="16dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/detail_footer"
+                android:tint="@android:color/darker_gray"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/s_rect_black20lightgray"
+                android:src="@drawable/ic_footer"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:layout_width="40dp"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <View
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="50dp"
+            android:background="#ccc"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp" />
+        <!--上课时间-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--上课时间-->
+            <TextView
+                android:id="@+id/text1"
+                android:text="@string/class_time"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:layout_marginStart="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/detail_start_time"
+                android:textSize="16sp"
+                android:layout_marginStart="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text=" - "
+                android:id="@+id/text3"
+                android:textSize="16sp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/detail_end_time"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingStart="16dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--任课教师-->
+            <TextView
+                android:layout_marginEnd="10dp"
+                android:textSize="16sp"
+                android:text="@string/class_teacher"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/ic_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/detail_teacher"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingStart="16dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--上课地点-->
+            <TextView
+                android:layout_marginEnd="10dp"
+                android:textSize="16sp"
+                android:text="@string/class_location"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/ic_location"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/detail_room"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

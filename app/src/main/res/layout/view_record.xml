@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <!--录音按钮-->
+    <RelativeLayout
+        android:id="@+id/record"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/background_light"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <View
+            android:background="#ccc"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/press_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/record_button"
+                android:src="@drawable/circle_record_button"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <!--正在录音动画显示-->
+    <LinearLayout
+        android:id="@+id/recording"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/gray_ranctangle"
+        android:layout_centerInParent="true"
+        android:layout_width="150dp"
+        android:layout_height="150dp">
+        <ImageView
+            android:id="@+id/record_image"
+            android:src="@drawable/record0"
+            android:padding="10dp"
+            android:layout_width="100dp"
+            android:layout_height="120dp" />
+        <TextView
+            android:textColor="@color/white_fade"
+            android:text="@string/recording"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</merge>

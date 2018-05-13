@@ -1,0 +1,651 @@
+<resources>
+    <!--/////////////////////////////////通用/////////////////////////////////////////-->
+    <!--AppName-->
+    <string name="app_name">时光伴侣</string>
+    <!--Options-->
+    <string name="image_content">图片</string>
+    <string name="com_delete">删除</string>
+    <string name="com_delete_recover">恢复</string>
+    <string name="com_delete_finally">彻底删除</string>
+    <string name="delete_dlg_title">确认删除?</string>
+    <string name="delete_dlg_message">删除后将无法恢复.</string>
+    <string name="com_edit">编辑</string>
+    <string name="com_tip">提示</string>
+    <string name="com_back_tip">退出此次编辑</string>
+    <string name="com_setting">设置</string>
+    <string name="share">分享</string>
+    <string name="com_add">添加</string>
+    <string name="com_back">返回</string>
+    <string name="com_save">保存</string>
+    <string name="com_discard">放弃</string>
+    <string name="com_cancel">取消</string>
+    <string name="com_confirm">确定</string>
+    <string name="com_yes">是</string>
+    <string name="com_no">否</string>
+    <string name="com_title">标题</string>
+    <string name="others">其他</string>
+    <string name="com_share">分享</string>
+    <string name="com_alarm_">闹钟</string>
+    <string name="share_app">分享应用</string>
+    <string name="com_edit_dialog_tip">写下些什么&#8230;</string>
+    <string name="default_share_words">嗨，我在使用一款很棒的时间管理工具，推荐你也用下哦。</string>
+    <string name="share_item_dlg_title">写些要分享的内容</string>
+    <string name="share_item_dlg_hint">想要说些什么&#8230;</string>
+    <string name="share_item_chooser_title">分享APP给好友</string>
+    <string name="share_app_chooser_title">分享APP给好友</string>
+    <string name="notice_share_input">请输入分享内容</string>
+    <string name="com_toast_save_success">添加成功</string>
+    <string name="com_toast_save_failed">添加失败</string>
+    <string name="com_toast_update_success">更新成功</string>
+    <string name="com_toast_update_failed">更新失败</string>
+    <string name="com_toast_delete_success">删除成功</string>
+    <string name="com_toast_delete_success2">记录已被移动到回收站，可以从回收站中恢复.</string>
+    <string name="edit_empty">输入内容为空</string>
+    <!--Recording-->
+    <string name="com_record_error1">初始化录音设备失败</string>
+    <string name="com_record_error2">打开录音设备失败</string>
+    <string name="com_record_error3">没有可用的SD卡</string>
+    <string name="com_record_error4">无法创建存储路径</string>
+    <string name="com_record_error5">初始化文件存储路径失败</string>
+    <string name="play_sound">播放音频</string>
+    <string name="play_sound_progress">当前进度:</string>
+    <string name="play_failed_load">加载音乐文件失败</string>
+    <string name="press_record">长按录音</string>
+    <string name="recording">正在录音&#8230;</string>
+    <string name="beginning_location">正在定位&#8230;</string>
+    <string name="record_dlg_title">保存录音</string>
+    <string name="record_dlg_content">是否保存录音?</string>
+    <string name="record_save_tip1">文件已保存为</string>
+    <!--Image-->
+    <string name="icon_error1">图片文件无法创建</string>
+    <string name="image_default_name">未命名</string>
+    <string name="icon_set_error">设置图片失败</string>
+    <string name="com_name">名字</string>
+    <string name="com_content">内容</string>
+    <!--Location-->
+    <string name="com_no_location_service">没有可用的位置提供器</string>
+    <string name="com_no_location_permission">该应用没有获得位置访问许可权限</string>
+    <!--Audio-->
+    <string name="audio_src_record">录音</string>
+    <string name="audio_src_file">从文件夹中选取</string>
+    <string name="audio_copyright">请尊重原作版权.</string>
+    <!--ALARM-->
+    <string name="alarm_details">详细</string>
+    <!--menu show as-->
+    <string name="menu_show_as">视图</string>
+    <string name="menu_show_as_entry_list">列表</string>
+    <string name="menu_show_as_entry_grid">网格</string>
+    <!--权限-->
+    <string name="permission_set_dilog_title">设置权限</string>
+    <string name="permission_set_dialog_msg_body1">打开"设置"，轻触"权限"，将"</string>
+    <string name="permission_set_dialog_msg_body2">"设置为打开，并再次尝试. </string>
+    <string name="permission_storage">存储空间</string>
+    <string name="permission_phone">电话</string>
+    <string name="permission_location">位置信息</string>
+    <string name="permission_microphone">麦克风</string>
+    <string name="permission_set_button">去设置</string>
+    <string name="permission_denied_toast">请授予程序权限后再次尝试.</string>
+
+    <!--///////////////////////////////////日期/时间/////////////////////////////////////////-->
+    <string name="language">中文</string>
+    <string name="week1">星期日</string>
+    <string name="week2">星期一</string>
+    <string name="week3">星期二</string>
+    <string name="week4">星期三</string>
+    <string name="week5">星期四</string>
+    <string name="week6">星期五</string>
+    <string name="week7">星期六</string>
+    <string name="com_date">日期：</string>
+    <string name="com_time">时间：</string>
+    <string name="notice">提醒</string>
+    <string name="com_minute">分钟</string>
+
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hour">时</string>
+    <string name="minute">分</string>
+
+    <string name="cld_week1">周日</string>
+    <string name="cld_week2">周一</string>
+    <string name="cld_week3">周二</string>
+    <string name="cld_week4">周三</string>
+    <string name="cld_week5">周四</string>
+    <string name="cld_week6">周五</string>
+    <string name="cld_week7">周六</string>
+    <!--   -->
+    <!--//////////////////////////////////////欢迎/////////////////////////////////////////////-->
+    <!--layout_welcome.xml-->
+    <string name="welcome_skip">跳过</string>
+    <!--welcome.java-->
+    <string name="welcome_script">版权所有 2016</string>
+    <!--//////////////////////////////////////登录/////////////////////////////////////////////-->
+    <!--layout_login.xml-->
+    <string name="password_hint">输入密码</string>
+    <string name="email_hint">输入邮箱</string>
+    <string name="login_title">登录时光伴侣</string>
+    <string name="login_subtitle">使用注册时所填写的邮箱和密码</string>
+    <string name="login_forget">忘记密码?</string>
+    <string name="login_social">使用社交账号登录</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="we_char">微信</string>
+    <string name="twitter">推特</string>
+    <string name="weibo">微博</string>
+    <!--login.java-->
+    <string name="account_toast">请输入邮箱</string>
+    <string name="password_toast">请输入密码</string>
+    <string name="check_net_toast">请检查网络连接</string>
+    <string name="account_none_exist_toast">账号不存在</string>
+    <string name="password_error_toast">密码错误</string>
+    <!--//////////////////////////////////////注册/////////////////////////////////////////////-->
+    <!--layout_register.xml-->
+    <string name="rgst_title">注册账号</string>
+    <string name="rgst_back">返回</string>
+    <string name="rgst_script">高效利用你的时间，从注册时光伴侣开始</string>
+    <string name="in_name_hint">名字</string>
+    <string name="in_account_hint">邮箱</string>
+    <string name="in_psd_hint">密码</string>
+    <string name="in_repsd_hint">再次输入密码</string>
+    <string name="cfm_register">确认注册</string>
+    <!--ActivityRegister.java-->
+    <string name="empty_name_toast">请输入用户名</string>
+    <string name="empty_account_toast">请输入邮箱</string>
+    <string name="empty_psd_toast">请输入密码</string>
+    <string name="empty_repsd_toast">请再次输入密码</string>
+    <string name="back_cancel">取消</string>
+    <string name="back_confirm">确定</string>
+    <string name="back_tip">提示:</string>
+    <string name="back_dlg_msg">现在返回输入的信息将会丢失，确认返回吗？</string>
+    <!--注册状态-->
+    <string name="name_Ill_char">错误:用户名包含非法字符</string>
+    <string name="email_format">错误:邮箱格式不合法</string>
+    <string name="check_net">错误:请检查网络连接</string>
+    <string name="email_none_exist">错误:您输入的邮箱不存在</string>
+    <string name="email_registered">错误:该邮箱已被注册</string>
+    <string name="unknown_error">错误:发生未知错误</string>
+    <string name="known_error">错误:发生错误</string>
+    <string name="psd_long">错误:密码长度大于16</string>
+    <string name="psd_short">错误:密码长度小于6</string>
+    <string name="psd_numeric">错误:密码是纯数字的</string>
+    <string name="psd_Ill_char">错误:密码包含非法字符</string>
+    <string name="repsd_diff">错误:两次输入的密码不相同</string>
+    <string name="psd_dlg_msg">密码长度应该在6至16个字符之间，只能包含字母、数字和下划线，不能是纯数字的。</string>
+    <string name="back_modify">返回修改</string>
+    <string name="cfm_code">错误:验证码错误</string>
+    <!--注册成功-->
+    <string name="rgst_success">注册成功</string>
+    <string name="rgst_account">账号是:</string>
+    <string name="rgst_pass">\n密码是:</string>
+    <string name="back_login">返回登录</string>
+
+    <!--/////////////////////////////////////ActivityMain/////////////////////////////////////////////-->
+    <string name="default_dash_saying">欢迎使用《时光伴侣》.</string>
+    <string name="press_again_exit_app">再按一次退出</string>
+    <string name="main_nav_drawer_open">打开用户信息</string>
+    <string name="main_nav_drawer_close">关闭用户信息</string>
+    <!--菜单组件-->
+    <string name="menu1">日历</string>
+    <string name="menu2">课程</string>
+    <string name="menu3">日程</string>
+    <string name="menu4">作业</string>
+    <string name="menu5">考试</string>
+    <string name="menu6">随手记</string>
+    <!--顶部图片显示-->
+    <string name="add_img_title">更换图片</string>
+    <string name="edit_title">添加文字</string>
+    <string name="edit_hint">在这里输入文字</string>
+    <!--碎片-->
+    <string name="c_more">课程表</string>
+    <!--抽拉菜单-->
+    <string name="mmenu_zone">空间</string>
+    <string name="mmenu_time_line">时光线</string>
+    <string name="mmenu_rate_today">为今天打分</string>
+    <string name="mmenu_sync">同步数据</string>
+    <string name="mmenu_share">分享应用</string>
+    <string name="mmenu_setting">设置</string>
+    <string name="mmenu_trash">回收站</string>
+    <string name="mmenu_feedback">帮助与反馈</string>
+    <string name="mmenu_about">关于</string>
+    <string name="mmenu_exit">退出登录</string>
+    <!--评分-->
+    <string name="mrate_title">评分：</string>
+    <string name="mrate_tip1">今天的综合表现：</string>
+    <string name="mrate_tip2">简单评语：</string>
+    <string name="mrate_cancel">等会儿再评</string>
+    <string name="mrate_complete">评分完成</string>
+    <string name="mrate_success_toast">评分成功</string>
+    <string name="mrate_rated_toast">今天已经评价</string>
+    <!--弹出通知-->
+    <string name="mflower_content_title">时光伴侣:</string>
+    <string name="mflower_content_info1">忙了一天也该歇会儿了，自己要好好照顾自己哦。</string>
+    <string name="mflower_content_info2">一个人在外面打拼，记得要对自己好点。</string>
+    <string name="begining_of_day_title">开始新的一天！</string>
+    <string name="begining_od_day_info">看看今天都有什么事情要做，在时光伴侣安排你今天的时间规划. </string>
+    <string name="content_describe_text_class">课程</string>
+    <string name="content_describe_text_exam">考试</string>
+    <string name="content_describe_text_task">作业</string>
+    <string name="content_describe_text_assign">日程</string>
+    <string name="content_describe_text_note">随手记</string>
+    <!--每天的日程等信息的显示组件-->
+    <string name="s_section_class">今天的课程</string>
+    <string name="s_section_task">今天的作业</string>
+    <string name="s_section_exam">今天的考试</string>
+    <string name="s_section_note">随手记提醒</string>
+    <string name="s_section_assign">今天的日程</string>
+    <string name="s_section_assign2">未完成的日程</string>
+    <!--Weather and Location-->
+    <string name="mw_failed_2_get_response">获取天气数据失败</string>
+    <string name="mw_failed_2_location_net">定位失败，请检查网络和权限.</string>
+    <string name="mw_failed_2_location">定位失败</string>
+    <string name="mw_network_unavailable">网络不可用</string>
+    <string name="mw_updating">正在更新&#8230;</string>
+
+    <!--////////////////////////////////////UserInfo////////////////////////////////////-->
+    <string name="user_info_title">用户信息</string>
+    <!--设置头像/图片-->
+    <string name="dlg_img_title">设置头像</string>
+    <string name="dlg_img_from1">拍照</string>
+    <string name="dlg_img_from2">从相册选择</string>
+    <string name="dlg_img_cancel">取消</string>\
+    <!--编辑用户数据-->
+    <string name="nick_name">昵称</string>
+    <string name="gender">性别</string>
+    <string name="male">男性</string>
+    <string name="female">女性</string>
+    <string name="keep_privacy">保密</string>
+    <string name="city">城市</string>
+    <string name="school">学校</string>
+    <string name="phone">绑定手机</string>
+    <string name="weChat">绑定微信</string>
+    <string name="QQ">绑定QQ</string>
+    <string name="WeiBo">绑定微博</string>
+    <string name="exit">退出账号</string>
+    <string name="edit_nick_name">编辑用户昵称</string>
+    <string name="edit_nick_name_tip">输入新的昵称</string>
+
+    <!--////////////////////////////////////随手记////////////////////////////////////-->
+    <!--note_edit.xml-->
+    <string name="n_title">随手记</string>
+    <string name="n_discard">放弃</string>
+    <string name="n_save">保存</string>
+    <string name="n_content_hint">在这里添加文字&#8230;</string>
+    <string name="n_picture">添加图片</string>
+    <string name="n_record">添加声音</string>
+    <string name="n_location">添加位置</string>
+    <string name="n_name">添加标题</string>
+    <string name="n_collection">#添加到分类</string>
+    <string name="n_note">添加提醒</string>
+    <string name="n_picture_enough">已经到达能够添加的最大数量</string>
+    <string name="audio_name">音频名称</string>
+    <string name="audio_describe">音频描述</string>
+    <string name="audio_delete_for_sure">确定删除该音频文件？</string>
+    <string name="audio_play_null">音频路径为空.</string>
+    <string name="audio_play_none_exist">音频文件不存在.</string>
+    <string name="n_alarm_setting_title">设置日期和时间</string>
+    <string name="n_i_am_in">我在&#8230;</string>
+    <string name="n_locate_delete_msg">确定删除这个定位信息?</string>
+    <!--NoteEdit.java-->
+    <string name="n_edit_name_title">为记录添加名字</string>
+    <string name="n_edit_name_tip">输入名称：</string>
+    <string name="note_save_title_require">请添加一个标题</string>
+    <string name="note_save_collection_require">请指定分类</string>
+    <string name="n_record_null_toast">文件不存在，被移动或者被删除</string>
+    <!--NoteCollection.java-->
+    <string name="cln_edd_menu_title">添加新分类</string>
+    <string name="cln_edit_name2">该集合名已存在</string>
+    <string name="cln_color_selector">设置集合的颜色</string>
+    <string name="cln_edit_tip">集合名为空</string>
+    <string name="cln_dlg_title">编辑集合信息</string>
+    <!--nl_cln.xml-->
+    <string name="nl_title">查看记录</string>
+    <!--NoteViewer.java-->
+    <string name="media_type1">图片</string>
+    <string name="media_type2">位置</string>
+    <string name="media_type3">录音</string>
+    <string name="media_type4">子任务</string>
+    <string name="toast_no_picture">没有图片信息</string>
+    <string name="toast_no_voice">没有语音信息</string>
+    <string name="toast_no_location">没有位置信息</string>
+    <string name="toast_no_alarm">没有闹钟信息</string>
+    <string name="added_time">创建时间:&#160;</string>
+    <string name="cln_del_tip1">集合不为空</string>
+    <string name="cln_delete1">记录不为空，请移除记录后再删除.</string>
+    <string name="cln_del_tip2">确认删除?</string>
+    <string name="cln_delete2">删除之后无法恢复，确认删除该集合?</string>
+    <!--notel_viewer.xml-->
+    <string name="note_create_time">创建时间:</string>
+    <string name="note_create_author">作者:</string>
+    <string name="note_create_place">地点:</string>
+    <string name="com_picture">图片信息</string>
+    <string name="com_voice">语音信息</string>
+    <string name="com_location">位置信息</string>
+    <string name="com_alarm">闹钟信息</string>
+    <string name="toast_name_illegal">记录的名字不能为空</string>
+    <string name="nv_content_tip">您没有添加内容</string>
+    <string name="nv_content_tip2">点击添加内容</string>
+    <!--notev_cln_item.xml-->
+    <string name="note_total">记录总数</string>
+    <string name="note_cln_date_tip">添加日期</string>
+    <string name="note_cln_time_tip">添加时间</string>
+    <!--notel_list.xml-->
+    <string name="n_list_no_data">该集合中没有记录</string>
+    <string name="n_list_all_data">该集合中的全部记录:</string>
+    <string name="n_list_total_pictures">图</string>
+    <!--notev_cln_edit.xml-->
+    <string name="cln_edit_name">编辑新集合</string>
+    <string name="cln_edit_name_tip">编辑名称:</string>
+    <string name="cln_edit_color_tip">选择颜色</string>
+
+    <!--////////////////////////////////////课程////////////////////////////////////-->
+    <!--ClassDashboard.java-->
+    <string name="class_title">课程表</string>
+    <string name="class_title2">课程</string>
+    <string name="class_week1">周一</string>
+    <string name="class_week2">周二</string>
+    <string name="class_week3">周三</string>
+    <string name="class_week4">周四</string>
+    <string name="class_week5">周五</string>
+    <string name="class_week6">周六</string>
+    <string name="class_week7">周日</string>
+    <!--menu-->
+    <string name="class_back">本周</string>
+    <string name="class_share">分享</string>
+    <string name="class_next">下周</string>
+    <string name="class_above">上周</string>
+    <string name="class_all">全部课程</string>
+    <!--clsv_edit_item.xml-->
+    <string name="class_add_item">添加课程信息</string>
+    <string name="class_start_time">开始时间 : </string>
+    <string name="class_end_time">结束时间 : </string>
+    <string name="class_location">上课地点 : </string>
+    <string name="class_teacher">任课教师 : </string>
+    <string name="class_week">上课周次 : </string>
+    <!--clsl_edit.xml-->
+    <string name="class_edit_name">课程名称</string>
+    <string name="class_start_date">开始日期:</string>
+    <string name="class_end_date">结束日期:</string>
+    <string name="class_edit_title">编辑课程</string>
+    <!--clsv_item.xml-->
+    <string name="class_time">时间</string>
+    <string name="class_weekx">周次</string>
+    <!--ClassEdit.java-->
+    <string name="c_discard1">已经添加的内容将丢失，确定返回？</string>
+    <string name="class_back_tip_2">中止修改课程信息? </string>
+    <string name="class_save_tip1">请添加一条课程信息</string>
+    <string name="class_save_tip2">请添加课程名称</string>
+    <string name="class_location_tip">上课地点信息：</string>
+    <string name="edit_location_title">编辑地点信息</string>
+    <string name="class_teacher_tip">任课教师信息：</string>
+    <string name="edit_teacher_title">编辑教师信息</string>
+    <string name="class_options">选择操作类型</string>
+    <string name="class_detail_error_content">必须指定周次</string>
+    <string name="class_color_selector">选择课程标记色</string>
+    <string name="clse_t_error_title">时间错误</string>
+    <string name="clse_t_error_msg">开始时间不能大于结束时间.</string>
+    <string name="clse_d_error_title">日期错误</string>
+    <string name="clse_d_error_msg">开始日期不能大于结束日期.</string>
+    <string name="clse_del_dlg_title">确认删除课程信息?</string>
+    <string name="clse_del_dlg_content">被删除的课程信息无法恢复.</string>
+    <string name="clse_del_msg">是否要删除与该课程相关的作业和考试？</string>
+    <!--ClassViewer.xml-->
+    <string name="cls_tab1">作业</string>
+    <string name="cls_tab2">考试</string>
+    <string name="cls_tab3">课程信息</string>
+    <string name="clsv_time">上课时间</string>
+    <string name="clsv_add_teacher">添加教师信息</string>
+    <string name="clsv_add_room">添加教室信息</string>
+    <string name="clsv_edit_dlg_title">提示</string>
+    <string name="clsv_edit_dlg_msg">确认打开编辑活动？</string>
+    <string name="_class">课程</string>
+    <!--课程列表-->
+    <string name="cls_list_title">未结束</string>
+    <string name="class_list_title">全部</string>
+    <string name="cls_list_menu1">未结束的课程</string>
+    <string name="cls_list_menu2">全部课程</string>
+    <string name="c_list_no_data">没有数据</string>
+    <string name="cls_list_item_detail">个课程信息</string>
+    <string name="cls_no_tip">没有课程信息</string>
+
+    <!--////////////////////////////////////空间////////////////////////////////////////-->
+    <string name="zone_title">万花筒</string>
+
+    <!--////////////////////////////////////日程////////////////////////////////////////-->
+    <!--asn_dashboard.xml-->
+    <!--AssignDashboard.java-->
+    <string name="assign_title">日程</string>
+    <string name="asnd_num_tip">子任务</string>
+    <string name="asnd_title_tip">标题:</string>
+    <string name="asn_all">全部</string>
+    <string name="asn_overdue">未结束</string>
+    <string name="asn_no_tip">没有未完成的日程</string>
+    <!--Menu-->
+    <string name="asn_show_all">显示全部</string>
+    <string name="asn_show_overdue">只显示未完成</string>
+    <!--asnl_edit.xml-->
+    <string name="assign_edit_title">编辑日程</string>
+    <string name="assign_add">添加日程</string>
+    <string name="assign_edit_title_edit_hint">标题</string>
+    <string name="assign_edit_content_edit_hint">在这里添加日程内容&#8230;</string>
+    <string name="assign_content_hint">内容</string>
+    <string name="assign_edit_date_tip">开始日期 : </string>
+    <string name="assign_edit_time_tip">开始时间 : </string>
+    <string name="assign_edit_comment_tip">备注 : </string>
+    <string name="assign_add_sub">添加子日程</string>
+    <string name="assign_edit_add_sub_assign_tip">添加子日程 : </string>
+    <string name="assign_num_appendix">子日程</string>
+    <!--asnv_edit_sub.xnl-->
+    <string name="sub_assign_edit_title_edit_hint">标题</string>
+    <string name="sub_assign_edit_content_edit_hint">添加子日程内容&#8230;</string>
+    <string name="sub_assign_edit_start_date_tip">开始日期 : </string>
+    <string name="sub_assign_edit_start_time_tip">开始时间 : </string>
+    <string name="asnv_title">子日程</string>
+    <!--AssignEdit.java-->
+    <string name="assign_start_time">08:00</string>
+    <string name="asn_color_title">为日程添加颜色</string>
+    <string name="asn_save_tip">请为日程添加一个标题</string>
+    <string name="assign_save_dlgTitle">任务信息不完整，</string>
+    <string name="assign_save_dlgMsg">请为该任务添加名称。</string>
+    <string name="assign_discard_dlgTitle">确定放弃该任务？</string>
+    <string name="assign_discard_dlgMsg">编辑的内容或原任务将会被清除。</string>
+    <string name="assign_discard_dlgPositiveBtn">取消</string>
+    <string name="assign_discard_dlgNegativeBtn">放弃</string>
+    <string name="assign_save_tip1">信息不完整</string>
+    <string name="edit_comments">编辑备注</string>
+    <string name="edit_comments_hint">输入备注信息</string>
+    <string name="asn_sub_del_title">删除子日程?</string>
+    <string name="asn_sub_del_content">删除后不可恢复.</string>
+    <!--assign_viewer-->
+    <string name="asnv_tab1">日程信息</string>
+    <string name="asnv_tab2">子日程</string>
+    <string name="asnv_time_tip">开始时间</string>
+    <string name="asnv_progress_tip">日程进度</string>
+    <string name="asnv_progress_tip2">已完成</string>
+    <string name="asnv_content_tip">您没有为该日程添加内容</string>
+    <string name="asnv_content_empty_tip">点击添加内容</string>
+    <string name="asnv_comments_tip">您没有为该日程添加备注</string>
+    <string name="asnv_comments_empty_tip">点击添加备注</string>
+    <string name="asnv_dlg_title">提示</string>
+    <string name="asnv_dlg_msg">确认打开编辑活动？</string>
+    <string name="assignment">日程</string>
+    <!---->
+    <string name="sub_assign_num">子任务</string>
+    <!--asnv_sub_viwer.xml-->
+    <string name="sub_s_time">开始时间</string>
+    <string name="sub_v_contnet_tip">内容</string>
+    <string name="sub_default_name">未命名</string>
+    <string name="sub_content_empty_tip">未添加内容</string>
+    <string name="subf_no_sub_assign">没有关联的子日程</string>
+
+    <!--//////////////////////////////////////任务////////////////////////////////////////////-->
+    <!--about  ::::::::  TPTask dashboard-->
+    <string name="task_title">作业/考试</string>
+    <string name="task_add_title">选择类型</string>
+    <string name="task_add_task">添加作业</string>
+    <string name="task_add_exam">添加考试</string>
+    <string name="task_no_tip">没有要查询的作业</string>
+    <string name="exam_no_tip">没有要查询的考试</string>
+    <!--Menu-->
+    <string name="task_dash_menu1">仅未完成</string>
+    <string name="task_dash_menu2">显示全部</string>
+    <!--about  ::::::::  TPTask edit-->
+    <string name="task_edit_title1">编辑作业</string>
+    <string name="task_edit_title2">编辑考试</string>
+    <string name="task_edit_date">考试日期 : </string>
+    <string name="task_edit_date2">作业日期 : </string>
+    <string name="task_edit_time">考试时间 : </string>
+    <string name="task_edit_time2">作业时间 : </string>
+    <string name="task_edit_name1">名字</string>
+    <string name="task_edit_name2">时间:</string>
+    <string name="task_content_hint">在这里添加内容&#8230;</string>
+    <string name="task_comment_hint">在这里添加备注&#8230;</string>
+    <string name="task_exam_building">考场 : </string>
+    <string name="task_exam_seats">座号 : </string>
+    <string name="task_exam_span">考试时长 : </string>
+    <string name="task_associate">关联课程 : </string>
+    <string name="task_save_tip">请添加作业标题</string>
+    <string name="exam_span_title">编辑考试时长</string>
+    <string name="exam_span_edit_hint">编辑时长(分钟):</string>
+    <string name="exam_seat_title">编辑座号信息</string>
+    <string name="exam_seat_edit_hint">输入座号信息:</string>
+    <string name="exam_room_title">编辑考场信息</string>
+    <string name="exam_room_edit_hint">输入考场信息:</string>
+    <string name="exam_save_tip">请添加考试标题</string>
+    <string name="task">作业</string>
+    <string name="exam">考试</string>
+    <string name="task_add">添加考试/作业</string>
+    <!--for viewer TPTask TPExam-->
+    <string name="task_vtask_time">时间</string>
+    <string name="taskv_content_empty_tip">添加内容</string>
+    <string name="taskv_comment_empty_tip">添加备注</string>
+    <string name="task_vexam_time">时间</string>
+    <string name="task_vexam_durationg">时长</string>
+    <string name="task_vexam_room">考场</string>
+    <string name="task_vexam_seat">座号</string>
+    <string name="task_vexam_content">内容</string>
+    <string name="task_vexam_comment">备注</string>
+
+    <!--关于-->
+    <string name="about_title">关于</string>
+    <string name="about_failed_to_get_package_info">获取软件信息失败</string>
+    <string name="about_dilaog_message">时光伴侣是一个免费的时间管理工具，由S.H Wang开发。\n\n<a href="http://weibo.com/6018657059">Weibo</a> <a href="https://twitter.com/HiTimePartner">Twitter</a>\n\n可以在这里对软件提出任何特性请求或者报告Bug.</string>
+
+    <!--反馈-->
+    <string name="feedback_title">用户反馈</string>
+    <string name="feedback_send">发送</string>
+    <string name="feedback_toast">请输入要反馈的内容</string>
+    <string name="feedback_hint">输入反馈信息</string>
+    <string name="feedback_tip">尊敬的用户:\n
+        \t欢迎给TP提供反馈，如果您的反馈被我们采纳，我们会将您列为软件的贡献者。\t——TP</string>
+    <string name="feedback_success_toast">添加反馈成功</string>
+
+    <!--//////////////////////////////////////设置/////////////////////////////////////-->
+    <string name="setting_title">设置</string>
+
+    <string name="setting_dashboard">设置主界面</string>
+    <string name="set_dash_bg">设置背景</string>
+    <string name="set_dash_bg_detail">添加主界面色彩或者图片</string>
+    <string name="set_dash_saying">设置座右铭</string>
+    <string name="set_dash_saying_detail">添加显示在主界面下部的文字信息</string>
+    <string name="show_circumstance">设置气象信息</string>
+    <string name="show_circumstance_detail">是否在主界面显示气象信息</string>
+    <string name="edit_saying_tip">编辑文本</string>
+    <string name="set_dash_bg_title">选择背景类型</string>
+    <string name="bg_color_selector_title">选择背景颜色</string>
+    <string name="bg_use_image_title">选择图片来源</string>
+
+    <string name="setting_notice">设置提醒</string>
+    <string name="set_notice_mode">提醒方式</string>
+    <string name="set_notice_mode_detail">课程、日程、作业、考试以及随手记的提醒方式</string>
+    <string name="set_notice_title">提醒方式</string>
+    <string name="daily_notice_time">开始提醒时间</string>
+    <string name="daily_notice_time_detail">每天开始的提醒时间</string>
+    <string name="notice_time">固定提醒时间</string>
+    <string name="notice_time_detail">课程、日程、作业、考试以及随手记的提醒时间</string>
+
+    <string name="set_calendar">设置日历</string>
+    <string name="set_lunar">显示农历</string>
+    <string name="set_lunar_detail">是否在日历中显示农历</string>
+    <string name="set_start_time">周历的开始时间</string>
+    <string name="set_end_time">周历的结束时间</string>
+    <string name="set_week_calendar_title">显示高度</string>
+    <string name="set_week_calendar_height_title">单位小时显示的高度</string>
+    <string name="set_week_calendar_height">单位小时显示高度</string>
+    <string name="start_time_title">选择每天的开始时间</string>
+    <string name="cld_toast_error">开始时间应小于结束时间</string>
+    <string name="end_time_title">选择每天的结束时间</string>
+
+    <string name="set_cls_dashboard">设置课程界面</string>
+    <string name="set_cls_hour_height_title">课程表单位小时高度</string>
+    <string name="set_cls_hour_height">显示高度</string>
+    <string name="cls_db_start_time">开始时间</string>
+    <string name="cls_start_time_title">选择课程表开始时间</string>
+    <string name="cls_db_end_time">结束时间</string>
+    <string name="cls_end_time_title">选择课程表结束时间</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="title_activity_task_viewer">TaskViewer</string>
+    <!--////////////////////////////////////日历///////////////////////////////////////////-->
+    <!--Menu for month calendar-->
+    <string name="cld_menu_1">本月</string>
+    <string name="cld_menu_2">上个月</string>
+    <string name="cld_menu_3">下个月</string>
+    <string name="cld_menu_4">按周显示</string>
+    <string name="cld_menu_5">上周</string>
+    <string name="cld_menu_6">下周</string>
+    <string name="cld_menu_7">本周</string>
+    <string name="cld_menu_8">按月显示</string>
+    <!--section title for month calendar-->
+    <string name="cld_section1">评价信息</string>
+    <string name="cld_section2">课程信息</string>
+    <string name="cld_section3">日程信息</string>
+    <string name="cld_section4">作业信息</string>
+    <string name="cld_section5">考试信息</string>
+    <string name="cld_section6">随手记信息</string>
+    <!--calendar week sub assign default fix-->
+    <string name="cld_sub_default">的子日程</string>
+
+    <!--strings deu for WEATHER-->
+    <string name="temp_unit">℃</string>
+    <!--for menu-->
+    <string name="wm_set_city">设置城市</string>
+    <string name="wm_update_data">更新数据</string>
+    <!--for life state title-->
+    <string name="life_state1">穿衣指数</string>
+    <string name="life_state2">旅游指数</string>
+    <string name="life_state3">感冒指数</string>
+    <string name="life_state4">运动指数</string>
+
+    <string name="empty_string_body"></string>
+
+    <!--SEARCH-->
+    <string name="com_search">搜索</string>
+    <string name="search_hint_for_class">搜索课程名称</string>
+    <string name="search_hint_for_assign">搜索日程名称</string>
+    <string name="search_hint_for_task">搜索作业名称</string>
+    <string name="search_hint_for_exam">搜索考试名称</string>
+    <string name="search_hint_for_note">搜索随手记名称</string>
+
+    <!--Used for ACRA Toast message-->
+    <string name="acra">ACRA</string>
+
+    <!--Used for multi images selector-->
+    <string name="mis_action_done">完成</string>
+    <string name="mis_error_image_not_exist">图片错误</string>
+    <string name="mis_action_select_down">完成(已选%d)</string>
+    <string name="mis_folder_all">所有照片</string>
+    <string name="mis_msg_amount_limit">已经达到可选数量的最大值</string>
+    <string name="mis_photo_unit">%d张</string>
+    <string name="mis_msg_no_camera">没有系统相机</string>
+
+    <!--Used for image edit layout.-->
+    <string name="image_edit">编辑</string>
+    <string name="image_edit_locator">添加位置</string>
+    <string name="image_edit_comment_hint">照片的背后&#8230;</string>
+
+    <string name="appbar_scrolling_view_behavior">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+
+</resources>
